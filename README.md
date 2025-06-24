@@ -69,9 +69,9 @@ pip install customtkinter mysql-connector-python
 ```
 ### 🛢️ Set Up MySQL Database
 
-> Make sure your MySQL server is running.
-> Open Database.txt and execute its SQL statements in your MySQL client (e.g., phpMyAdmin, MySQL Workbench, or terminal).
-> This will create the hospital_db database and necessary tables.
+- Make sure your MySQL server is running.
+- Open Database.txt and execute its SQL statements in your MySQL client (e.g., phpMyAdmin, MySQL Workbench, or terminal).
+- This will create the hospital_db database and necessary tables.
 
 ### 🏃 Run the Application
 Run the GUI version:
