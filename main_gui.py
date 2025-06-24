@@ -271,7 +271,7 @@ class HospitalGUI:
             ).pack()
             tk.Label(
                 self.bill_frame,
-                text=f"Total Bill : {total} units",
+                text=f"Total Bill : {total} Rs",
                 font=("Arial", 12, "bold"),
                 bg="white",
             ).pack()
