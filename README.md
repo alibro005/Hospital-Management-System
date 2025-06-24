@@ -5,7 +5,7 @@
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen)
 ![CLI](https://img.shields.io/badge/Interface-CLI-blueviolet)
 
-A Python-based Hospital Management System that combines Object-Oriented Programming, a Tkinter GUI, CLI options, and MySQL integration. It enables users to manage patient data, doctor assignments, billing, and user authentication through a clean, modular architecture.
+A Python-based Hospital Management System that combines ***Object-Oriented Programming***, a Tkinter GUI, CLI options, and MySQL integration. It enables users to manage patient data, doctor assignments, billing, and user authentication through a clean, modular architecture.
 
 ---
 
