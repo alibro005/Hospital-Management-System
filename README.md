@@ -121,11 +121,17 @@ Group Project
 
 - Muhammad Ali Siddiqui
 - Muhammad Sami
-  
-Object-Oriented Programming Final Project — Python + MySQL
 
+### 📚 References :
+
+- Tkinter — used for building the graphical user interface in Python.
+- MySQL — used as the backend database system.
+- Python MySQL Connector — for integrating Python with MySQL.
+- Object-Oriented Programming (OOP) concepts — used to structure classes like Patient, Doctor, and Billing.
+- Project developed as part of Object-Oriented Programming coursework at NCBA&E.
+- 
 ###  License :
 
-> Licensed under the MIT License.
+ Licensed under the MIT License.
 
 
