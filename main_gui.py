@@ -323,7 +323,4 @@ class HospitalGUI:
             messagebox.showinfo("Doctors", "No doctors found.")
 
 
-# if __name__ == "__main__":
-#     root = tk.Tk()
-#     app = HospitalGUI(root)
-#     root.mainloop()
+

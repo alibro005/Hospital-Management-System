@@ -4,10 +4,13 @@ from model.doctor import Doctor
 from model.billing import Billing
 from database import conn, cursor
 
+# ________CLI Based________
+
 
 def menu():
-    
+
     while True:
+
         print("\n---------Hospital Management System--------")
         print("1. Add Patient")
         print("2. Delete Patient")

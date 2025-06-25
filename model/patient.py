@@ -1,5 +1,6 @@
 from .person import Person
 
+# Patient Class
 
 class Patient(Person):
     def __init__(self, name, age, gender, patient_id, disease):
@@ -26,6 +27,7 @@ class Patient(Person):
         else:
             print("Patient or Doctor not found.")
 
+
     def save_to_db(self, cursor, conn):
         query = (
             "INSERT INTO patients (name, age, gender, disease) VALUES (%s, %s, %s, %s)"
@@ -33,6 +35,7 @@ class Patient(Person):
         values = (self.name, self.age, self.gender, self.disease)
         cursor.execute(query, values)
         conn.commit()
+
 
     @staticmethod
     def delete_from_db(cursor, conn, patient_id):

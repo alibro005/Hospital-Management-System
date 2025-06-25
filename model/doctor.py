@@ -1,5 +1,6 @@
 from .person import Person
 
+# Doctor Class
 
 class Doctor(Person):
     def __init__(self, name, age, gender, doctor_id, specialization):
