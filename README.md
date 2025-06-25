@@ -129,7 +129,7 @@ Group Project
 - Python MySQL Connector — for integrating Python with MySQL.
 - Object-Oriented Programming (OOP) concepts — used to structure classes like Patient, Doctor, and Billing.
 - Project developed as part of Object-Oriented Programming coursework at NCBA&E.
-- 
+
 ###  License :
 
  Licensed under the MIT License.
