@@ -1,5 +1,6 @@
 # Person CLass
 
+
 class Person:
     def __init__(self, name, age, gender):
 
@@ -8,8 +9,7 @@ class Person:
         self.gender = gender
 
     def show_details(self):
-        
+
         print(f"Name : {self.name}")
         print(f"Age : {self.age}")
         print(f"Gender : {self.gender}")
-    

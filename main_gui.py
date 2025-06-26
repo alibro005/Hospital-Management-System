@@ -78,7 +78,6 @@ class HospitalGUI:
                 widget.destroy()
         self.fields.clear()
 
-
     def build_form(self, patient_form=True):
         self.clear_form()
         self.fields = {}
@@ -108,8 +107,6 @@ class HospitalGUI:
             bg="#d9ead3",
         )
         self.canvas.create_window(500, 120 + len(labels) * 40, window=submit_btn)
-     
-
 
     def show_add_patient_form(self):
         self.build_form(patient_form=True)
@@ -214,7 +211,9 @@ class HospitalGUI:
             doctor = cursor.fetchone()
 
             if patient and doctor:
-                query = "UPDATE patients SET assigned_doctor_id = %s WHERE patient_id = %s"
+                query = (
+                    "UPDATE patients SET assigned_doctor_id = %s WHERE patient_id = %s"
+                )
                 cursor.execute(query, (did, pid))
                 conn.commit()
                 messagebox.showinfo(
@@ -321,6 +320,3 @@ class HospitalGUI:
                 tree.insert("", "end", values=row)
         else:
             messagebox.showinfo("Doctors", "No doctors found.")
-
-
-

@@ -59,7 +59,7 @@ def menu():
                 did = int(input("Enter Doctor ID: "))
                 Patient.assign_doctor(cursor, conn, pid, did)
             except ValueError:
-                print("❌ Please enter valid numeric IDs.")
+                print(" Please enter valid numeric IDs.")
 
         elif choice == "5":
             cursor.execute("SELECT * FROM patients")

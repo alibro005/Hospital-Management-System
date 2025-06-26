@@ -25,19 +25,17 @@ class LoginApp:
 
         # ===== Left Image Panel =====
 
-        left_image = Image.open("images/login.png")  
-        left_image = left_image.resize(
-            (350, 400), Image.Resampling.LANCZOS
-        )  
+        left_image = Image.open("images/login.png")
+        left_image = left_image.resize((350, 400), Image.Resampling.LANCZOS)
         # Resize to fit the panel
         left_photo = ImageTk.PhotoImage(left_image)
 
         left_panel = tk.Label(main_frame, image=left_photo, width=300)
-        left_panel.image = left_photo  
+        left_panel.image = left_photo
         left_panel.pack(side="left", fill="y")
 
         # ===== Right Login Panel =====
-        
+
         login_frame = tk.Frame(main_frame, padx=40, pady=20)
         login_frame.pack(side="right", fill="both", expand=True)
 
@@ -73,7 +71,7 @@ class LoginApp:
             self.root.destroy()
 
             # Launch the main GUI
-           
+
             root = tk.Tk()
             app = HospitalGUI(root)
             root.mainloop()
@@ -88,5 +86,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = LoginApp(root)
     root.mainloop()
-
-    
