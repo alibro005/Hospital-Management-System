@@ -103,7 +103,7 @@ python main.py
 
 
 ## 🧩 Class Diagram :
-The following diagram shows the relationships between core classes in the Hospital Management System:
+The following diagram shows the relationships between core classes in the Hospital Management System for CLI version :
 
 <img src="images/class_diagram.png" alt="Class Diagram" width="400"/>
 
