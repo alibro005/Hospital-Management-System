@@ -85,8 +85,8 @@ python main.py
 
 ###  Sample Credentials :
 
-> Username: admin@hms.com
-> Password: 1234
+- Username: admin@hms.com
+- Password: 1234
 (You can customize this in login.py)
 
 ###  Screenshots
