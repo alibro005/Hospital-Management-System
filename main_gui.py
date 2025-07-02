@@ -5,6 +5,7 @@ from tkinter import simpledialog
 from database import cursor, conn
 from PIL import Image, ImageTk
 
+## GUI based
 
 class HospitalGUI:
 
@@ -16,7 +17,10 @@ class HospitalGUI:
         self.cursor = cursor
         self.conn = conn
 
+# ------------------------- GUI Creation ----------------------------------
+
     def create_gui(self):
+
         lbltitle = Label(
             self.root,
             bd=7,
@@ -28,6 +32,7 @@ class HospitalGUI:
         )
         lbltitle.pack(side=TOP, fill="x")
 
+# -------------------------- Left data frame -----------------------
         Dataframe = Frame(self.root, bd=9, relief=RIDGE)
         Dataframe.place(x=0, y=60, width=1270, height=360)
 
@@ -41,6 +46,7 @@ class HospitalGUI:
         )
         self.Dataframeleft.place(x=0, y=5, width=880, height=340)
 
+# ---------------- Right data frame --------------------------
         Dataframeright = LabelFrame(
             Dataframe,
             bd=9,
@@ -51,12 +57,17 @@ class HospitalGUI:
         )
         Dataframeright.place(x=875, y=5, width=374, height=340)
 
+# ----------------- Buttton frame -----------------------------
+
         Buttonframe = Frame(self.root, bd=9, relief=RIDGE)
         Buttonframe.place(x=0, y=409, width=1270, height=50)
+
+# --------------- Details frame -----------------------------
 
         self.Detailsframe = Frame(self.root, bd=9, relief=RIDGE)
         self.Detailsframe.place(x=0, y=455, width=1270, height=200)
 
+# -------------------------------------------------------------------
         self.notebook = ttk.Notebook(self.Detailsframe)
         self.notebook.pack(expand=True, fill=BOTH)
 
@@ -71,6 +82,8 @@ class HospitalGUI:
 
         self.current_form = "patient"
         self.create_patient_form()
+
+# ----------------- Buttons ----------------------------------------
 
         Button(
             Buttonframe,
@@ -142,6 +155,8 @@ class HospitalGUI:
             command=self.root.quit,
         ).grid(row=0, column=6)
 
+# ---------------- bill area ---------------------------------------------------
+
         self.bill_text = Text(Dataframeright, font=("Arial", 12), width=40, height=15)
         self.bill_text.pack()
 
@@ -153,6 +168,8 @@ class HospitalGUI:
             font=("Arial", 10, "bold"),
             command=self.create_bill_form,
         ).pack(side=BOTTOM, pady=2)
+
+# ------------------- Show Details ----------------------------------------------
 
     def create_patient_tree(self):
         self.patient_tree = ttk.Treeview(
@@ -191,6 +208,8 @@ class HospitalGUI:
     def clear_form(self):
         for widget in self.Dataframeleft.winfo_children():
             widget.destroy()
+
+# ---------------------  Forms -------------------------------------------
 
     def create_patient_form(self):
         self.clear_form()
@@ -471,7 +490,8 @@ class HospitalGUI:
             except Exception as e:
                 messagebox.showerror("Error", str(e))
 
-    # ______________________________________________________________________________________
+# ----------------------------------------------------------------------------------
+
     def show_patients(self):
         try:
             for item in self.patient_tree.get_children():
