@@ -7,6 +7,7 @@ from PIL import Image, ImageTk
 
 ## GUI based
 
+
 class HospitalGUI:
 
     def __init__(self, root):
@@ -17,7 +18,7 @@ class HospitalGUI:
         self.cursor = cursor
         self.conn = conn
 
-# ------------------------- GUI Creation ----------------------------------
+    # ------------------------- GUI Creation ----------------------------------
 
     def create_gui(self):
 
@@ -32,7 +33,7 @@ class HospitalGUI:
         )
         lbltitle.pack(side=TOP, fill="x")
 
-# -------------------------- Left data frame -----------------------
+        # -------------------------- Left data frame -----------------------
         Dataframe = Frame(self.root, bd=9, relief=RIDGE)
         Dataframe.place(x=0, y=60, width=1270, height=360)
 
@@ -46,7 +47,7 @@ class HospitalGUI:
         )
         self.Dataframeleft.place(x=0, y=5, width=880, height=340)
 
-# ---------------- Right data frame --------------------------
+        # ---------------- Right data frame --------------------------
         Dataframeright = LabelFrame(
             Dataframe,
             bd=9,
@@ -57,17 +58,17 @@ class HospitalGUI:
         )
         Dataframeright.place(x=875, y=5, width=374, height=340)
 
-# ----------------- Buttton frame -----------------------------
+        # ----------------- Buttton frame -----------------------------
 
         Buttonframe = Frame(self.root, bd=9, relief=RIDGE)
         Buttonframe.place(x=0, y=409, width=1270, height=50)
 
-# --------------- Details frame -----------------------------
+        # --------------- Details frame -----------------------------
 
         self.Detailsframe = Frame(self.root, bd=9, relief=RIDGE)
         self.Detailsframe.place(x=0, y=455, width=1270, height=200)
 
-# -------------------------------------------------------------------
+        # -------------------------------------------------------------------
         self.notebook = ttk.Notebook(self.Detailsframe)
         self.notebook.pack(expand=True, fill=BOTH)
 
@@ -83,7 +84,7 @@ class HospitalGUI:
         self.current_form = "patient"
         self.create_patient_form()
 
-# ----------------- Buttons ----------------------------------------
+        # ----------------- Buttons ----------------------------------------
 
         Button(
             Buttonframe,
@@ -155,7 +156,7 @@ class HospitalGUI:
             command=self.root.quit,
         ).grid(row=0, column=6)
 
-# ---------------- bill area ---------------------------------------------------
+        # ---------------- bill area ---------------------------------------------------
 
         self.bill_text = Text(Dataframeright, font=("Arial", 12), width=40, height=15)
         self.bill_text.pack()
@@ -169,7 +170,7 @@ class HospitalGUI:
             command=self.create_bill_form,
         ).pack(side=BOTTOM, pady=2)
 
-# ------------------- Show Details ----------------------------------------------
+    # ------------------- Show Details ----------------------------------------------
 
     def create_patient_tree(self):
         self.patient_tree = ttk.Treeview(
@@ -209,7 +210,7 @@ class HospitalGUI:
         for widget in self.Dataframeleft.winfo_children():
             widget.destroy()
 
-# ---------------------  Forms -------------------------------------------
+    # ---------------------  Forms -------------------------------------------
 
     def create_patient_form(self):
         self.clear_form()
@@ -490,7 +491,7 @@ class HospitalGUI:
             except Exception as e:
                 messagebox.showerror("Error", str(e))
 
-# ----------------------------------------------------------------------------------
+    # ----------------------------------------------------------------------------------
 
     def show_patients(self):
         try:
