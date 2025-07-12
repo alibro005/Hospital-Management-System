@@ -119,8 +119,8 @@ The following diagram shows the relationships between core classes in the Hospit
 
 Group Project
 
-- Muhammad Ali Siddiqui
-- Muhammad Sami
+- [Muhammad Ali Siddiqui](www.github.com/alibro005)
+- [Muhammad Sami](www.github.com/samibro002)
 
 ### 📚 References :
 
