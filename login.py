@@ -15,7 +15,7 @@ VALID_PASSWORD = "1234"
 class LoginApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("🔐 Login")
+        self.root.title("Login")
         self.root.geometry("800x400")
         self.root.resizable(False, False)
 
