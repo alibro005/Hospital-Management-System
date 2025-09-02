@@ -34,16 +34,16 @@ A Python-based Hospital Management System that combines ***Object-Oriented Progr
 ## 📁 Project Structure
 ```
 Hospital-Management/
-├── main.py      # CLI version
-├── main_gui.py  # GUI interface
-├── login.py     # Login window with GUI
-├── database.py  # MySQL DB connection
-├── model/ # OOP-based entity classes
+├── main.py         # CLI version
+├── main_gui.py     # GUI interface
+├── login.py        # Login window with GUI
+├── database.py     # MySQL DB connection
+├── model/          # OOP-based entity classes
 │ ├── person.py
 │ ├── patient.py
 │ ├── doctor.py
 │ └── billing.py
-└── .venv/    # Optional virtual environment
+└── .venv/          # Optional virtual environment
 ```
 ---
 
@@ -117,10 +117,7 @@ The following diagram shows the relationships between core classes in the Hospit
 
 ### Authors :
 
-Group Project
-
-- Muhammad Ali Siddiqui
-- Muhammad Sami
+- [Muhammad Ali Siddiqui](www.github.com/alibro005)
 
 ### 📚 References :
 
