@@ -1,9 +1,11 @@
-# 🏥 Hospital Management System – OOP Project (Python + MySQL)
+# Hospital Management System – OOP Project (Python + MySQL)
 
 ![Python](https://img.shields.io/badge/Python-3.9+-blue?logo=python)
 ![Database](https://img.shields.io/badge/Database-MySQL-lightgrey)
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen)
 ![CLI](https://img.shields.io/badge/Interface-CLI-blueviolet)
+![Build Status](https://github.com/alibro005/Hospital-Management-System/actions/workflows/python-app.yml/badge.svg)
+
 
 A Python-based Hospital Management System that combines ***Object-Oriented Programming***, a Tkinter GUI, CLI options, and **MySQL** integration. It enables users to manage patient data, doctor assignments, billing, and user authentication through a clean, modular architecture.
 
@@ -11,13 +13,13 @@ A Python-based Hospital Management System that combines ***Object-Oriented Progr
 
 ##  Features
 
-- 🔐 Login Authentication System  
-- ➕ Add / 🗑️ Delete Patients  
-- 👨‍⚕️ Add Doctors & Assign Them to Patients  
-- 📄 View Patient and Doctor Details  
-- 💳 Generate Billing Information  
-- 🖥️ GUI-based and CLI-based operation  
-- 🛢️ MySQL Database Integration  
+- Login Authentication System  
+-  Add / Delete Patients  
+-  Add Doctors & Assign Them to Patients  
+-  View Patient and Doctor Details  
+- Generate Billing Information  
+-  GUI-based and CLI-based operation  
+-  MySQL Database Integration  
 
 ---
 
@@ -47,7 +49,7 @@ Hospital-Management/
 ```
 ---
 
-## 🛠 Setup Instructions
+## Setup Instructions
 
 ### 1.  Clone the Repository :
 
@@ -102,12 +104,12 @@ python main.py
 
 
 
-## 🧩 Class Diagram :
+## Class Diagram :
 The following diagram shows the relationships between core classes in the Hospital Management System for CLI version :
 
 <img src="images/class_diagram.png" alt="Class Diagram" width="400"/>
 
-### 🧠 Concepts Demonstrated :
+### Concepts Demonstrated :
 
 - Object-Oriented Programming (Inheritance, Encapsulation, Composition)
 - GUI development with Tkinter and CustomTkinter
@@ -115,11 +117,15 @@ The following diagram shows the relationships between core classes in the Hospit
 - Functional separation between logic, database, and interface
 - CLI and GUI support for managing hospital operations
 
+## Documentation
+
+The official project documentation (with diagrams) is available here : [HMS Project Documentation (PDF)](docs/project_documentation.pdf)
+
 ### Authors :
 
 - [Muhammad Ali Siddiqui](www.github.com/alibro005)
 
-### 📚 References :
+### References :
 
 - Tkinter — used for building the graphical user interface in Python.
 - MySQL — used as the backend database system.
