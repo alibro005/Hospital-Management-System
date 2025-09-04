@@ -33,7 +33,7 @@ A Python-based Hospital Management System that combines ***Object-Oriented Progr
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```
 Hospital-Management/
 ├── main.py         # CLI version
