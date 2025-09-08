@@ -127,15 +127,15 @@ The official project documentation (with diagrams) is available here : [HMS Proj
 
 ### References :
 
-- Tkinter — used for building the graphical user interface in Python.
-- MySQL — used as the backend database system.
-- Python MySQL Connector — for integrating Python with MySQL.
-- Object-Oriented Programming (OOP) concepts — used to structure classes like Patient, Doctor, and Billing.
+- Tkinter used for building the graphical user interface in Python.
+- MySQL used as the backend database system.
+- Python MySQL Connector for integrating Python with MySQL.
+- Object-Oriented Programming (OOP) concepts used to structure classes like Patient, Doctor, and Billing.
 - Project developed as part of Object-Oriented Programming coursework at NCBA&E.
 
 ###  License :
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License see the [LICENSE](LICENSE) file for details.
 
 
 
