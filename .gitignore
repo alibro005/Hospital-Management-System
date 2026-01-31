@@ -1,8 +1,1 @@
 
-# Ignored Files
-
-database.py
-__pycache__/
-model/__pycache__/
-.venv/
-database.txt
