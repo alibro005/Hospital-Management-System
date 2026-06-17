@@ -531,11 +531,11 @@ class HospitalGUI:
             if patient:
                 total = days * rate
                 self.bill_text.delete("1.0", END)
-                self.bill_text.insert(END, f"         Patient ID: {patient[0]}\n")
-                self.bill_text.insert(END, f"         Name: {patient[1]}\n")
-                self.bill_text.insert(END, f"         Days Admitted: {days}\n")
-                self.bill_text.insert(END, f"         Daily Charge: {rate}\n")
-                self.bill_text.insert(END, f"\n        Total Bill: {total}\n")
+                self.bill_text.insert(END, f"Patient ID: {patient[0]}\n")
+                self.bill_text.insert(END, f"Name: {patient[1]}\n")
+                self.bill_text.insert(END, f"Days Admitted: {days}\n")
+                self.bill_text.insert(END, f"Daily Charge: {rate}\n")
+                self.bill_text.insert(END, f"\n Total Bill: {total}\n")
             else:
                 messagebox.showerror("Error", "Patient not found")
         except Exception as e:
