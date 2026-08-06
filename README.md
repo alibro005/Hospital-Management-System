@@ -31,7 +31,6 @@ A Python-based Hospital Management System that combines ***Object-Oriented Progr
   - [Show Details](#show-details)
 - [Class Diagram](#class-diagram)
 - [Concepts Demonstrated](#concepts-demonstrated)
-- [Documentation](#documentation)
 - [Authors](#authors)
 - [References](#references)
 - [License](#license)
@@ -186,9 +185,6 @@ The following diagram shows the relationships between core classes in the Hospit
 - Functional separation between logic, database, and interface
 - CLI and GUI support for managing hospital operations
 
-## Documentation
-
-The official project documentation (with diagrams) is available here : [HMS Project Documentation (PDF)](docs/project_documentation.pdf)
 
 ### Authors
 
