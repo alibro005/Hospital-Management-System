@@ -4,12 +4,59 @@
 ![Database](https://img.shields.io/badge/Database-MySQL-lightgrey)
 ![GUI](https://img.shields.io/badge/GUI-Tkinter-brightgreen)
 ![CLI](https://img.shields.io/badge/Interface-CLI-blueviolet)
+![OOP](https://img.shields.io/badge/Design-OOP-orange)
 ![Build Status](https://github.com/alibro005/Hospital-Management-System/actions/workflows/python-app.yml/badge.svg)
 
 
 A Python-based Hospital Management System that combines ***Object-Oriented Programming***, a Tkinter GUI, CLI options, and **MySQL** integration. It enables users to manage patient data, doctor assignments, billing, and user authentication through a clean, modular architecture.
 
 ---
+
+## Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Setup Instructions](#setup-instructions)
+  - [1. Clone the Repository](#1-clone-the-repository)
+  - [2. Create a Virtual Environment](#2-create-a-virtual-environment)
+  - [3. Install Dependencies](#3-install-dependencies)
+  - [4. Set Up MySQL Database](#4-set-up-mysql-database)
+  - [5. Run the Application](#5-run-the-application)
+- [Sample Credentials](#sample-credentials)
+- [Screenshots](#screenshots)
+  - [Login Window](#login-window)
+  - [Main Screen](#main-screen)
+  - [Show Details](#show-details)
+- [Class Diagram](#class-diagram)
+- [Concepts Demonstrated](#concepts-demonstrated)
+- [Documentation](#documentation)
+- [Authors](#authors)
+- [References](#references)
+- [License](#license)
+
+  
+
+## Overview
+
+This project is a desktop-based Hospital Management System built with Python.
+
+It was developed to apply Object-Oriented Programming concepts to a practical application while also working with a relational database and graphical user interface.
+
+The application provides both GUI and CLI versions and uses MySQL to store and manage hospital-related data.
+
+The main operations include:
+
+- User authentication
+- Adding and deleting patients
+- Adding doctors
+- Assigning doctors to patients
+- Viewing patient and doctor information
+- Generating billing information
+- Managing data through MySQL
+
+
 
 ##  Features
 
@@ -49,67 +96,89 @@ Hospital-Management/
 ```
 ---
 
+
 ## Setup Instructions
 
-### 1.  Clone the Repository :
+### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/hospital-management-system.git
-cd Hospital-Management
+git clone https://github.com/alibro005/Hospital-Management-System.git
+cd Hospital-Management-System
 ```
 
-### 2.  (Optional) Create a Virtual Environment :
+### 2. Create a Virtual Environment
 
-```
+For Windows:
+
+```bash
 python -m venv .venv
-source .venv/bin/activate  # For Windows: .venv\Scripts\activate
+.venv\Scripts\activate
 ```
-### 3.  Install Dependencies :
 
+For macOS/Linux:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
 ```
+
+### 3. Install Dependencies
+
+```bash
 pip install customtkinter mysql-connector-python
 ```
-### 4. Set Up MySQL Database :
 
-- Make sure your MySQL server is running.
-- Open Database.txt and execute its SQL statements in your MySQL client (e.g., phpMyAdmin, MySQL Workbench, or terminal).
-- This will create the hospital_db database and necessary tables.
+### 4. Set Up MySQL Database
 
-### 5.  Run the Application :
-Run the GUI version:
-```
+Make sure your MySQL server is running.
+
+Open `Database.txt` and execute the SQL statements using a MySQL client such as MySQL Workbench, phpMyAdmin, or the MySQL command line.
+
+This will create the `hospital_db` database and the required tables.
+
+Before running the application, update the MySQL connection details in `database.py` according to your local MySQL configuration.
+
+### 5. Run the Application
+
+To run the GUI version:
+
+```bash
 python login.py
 ```
-Run the CLI version:
-```
+
+To run the CLI version:
+
+```bash
 python main.py
 ```
 
-###  Sample Credentials :
+---
+
+## Sample Credentials
 
 - Username: admin@hms.com
 - Password: 1234
 (You can customize this in login.py)
 
-###  Screenshots
+## Screenshots
 
-###  Login Window :
+### Login Window
 <img src="images/login_screen.png" alt="Login Window" width="450" height="200"/>
 
-### Main Screen :
+### Main Screen
 <img src="images/main_screen.png" alt="Add Patient" width="450" height="200"/>
 
-### Show Details :
+### Show Details
 <img src="images/show_screen.png" alt="Add Patient" width="450" height="200"/>
 
 
 
-## Class Diagram :
+## Class Diagram 
 The following diagram shows the relationships between core classes in the Hospital Management System for CLI version :
 
 <img src="images/class_diagram.png" alt="Class Diagram" width="400"/>
 
-### Concepts Demonstrated :
+### Concepts Demonstrated 
 
 - Object-Oriented Programming (Inheritance, Encapsulation, Composition)
 - GUI development with Tkinter and CustomTkinter
@@ -121,11 +190,11 @@ The following diagram shows the relationships between core classes in the Hospit
 
 The official project documentation (with diagrams) is available here : [HMS Project Documentation (PDF)](docs/project_documentation.pdf)
 
-### Authors :
+### Authors
 
 - [Muhammad Ali Siddiqui](www.github.com/alibro005)
 
-### References :
+### References
 
 - Tkinter used for building the graphical user interface in Python.
 - MySQL used as the backend database system.
@@ -133,7 +202,7 @@ The official project documentation (with diagrams) is available here : [HMS Proj
 - Object-Oriented Programming (OOP) concepts used to structure classes like Patient, Doctor, and Billing.
 - Project developed as part of Object-Oriented Programming coursework at NCBA&E.
 
-###  License :
+###  License 
 
 This project is licensed under the MIT License see the [LICENSE](LICENSE) file for details.
 
